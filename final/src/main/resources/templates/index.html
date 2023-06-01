@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosabelén</title>
+    
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <a href="#" class="logo">
+            <img th:src="@{/assets//img/logo.png}">
+        </a>
+        <ul class="navbar">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+        <div class="h-icons">
+            <a href="#"><i class='bx bx-shopping-bag'></i></a>
+            <a href="#"><i class='bx bx-heart'></i></a>
+            <a th:href="@{/login}"><i class='bx bx-user' ></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home">
+        <div class="home-text">
+            <h1>Encuentra tu propia <br> Felicidad</h1>
+            <p>Haz un ramo y recoge un regalo con <br> tus deseos. Entrega a cualquier rincón de la ciudad.</p>
+            <a href="#" class="btn">Elige un ramo</a>
+        </div>        
+    </section>
+
+    <!-- banner section -->
+    <section class="banner">
+        <div class="banner-img">
+            <img th:src="@{/assets//img/tulipanes.jpg}">
+        </div>
+        <div class="banner-img">
+            <img th:src="@{/assets//img/regalos.jpg}">
+        </div>
+        <div class="banner-img">
+            <img th:src="@{/assets//img/rosas.jpg}">
+        </div>
+    </section>
+
+    <!-- new product section -->
+    <section class="new product">
+        <div class="center-text">
+            <h2>artículos recién llegados</h2>
+        </div>
+        <div class="new-content">
+            <div class="row">
+                <img th:src="@{/assets//img/new-p1.png}">
+                <h4>ARREGLO AMANDA EN COPÓN</h4>
+                <h5>S/. 380.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p2.png}">
+                <h4>ARREGLO ARIANNA EN COPÓN</h4>
+                <h5>S/. 280.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p3.png}">
+                <h4>ARREGLO ALDA EN COPÓN</h4>
+                <h5>S/. 260.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p4.png}">
+                <h4>ARREGLO HELENA EN MIRROR BOX</h4>
+                <h5>S/. 350.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p5.png}">
+                <h4>ARREGLO ADRIANA EN WOOD BOX</h4>
+                <h5>S/. 260.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p6.png}">
+                <h4>ARREGLO BRISA EN MIRROR BOX</h4>
+                <h5>S/. 280.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p7.png}">
+                <h4>ARREGLO CELINE EN COPÓN</h4>
+                <h5>S/. 280.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p8.png}">
+                <h4>ARREGLO CLARA EN MIRROR BOX</h4>
+                <h5>S/. 390.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner 02 section -->
+    <section class="banner">
+        <div class="banner-img">
+            <img th:src="@{/assets//img/cumpleaños.jpg}">
+        </div>
+        <div class="banner-img">
+            <img th:src="@{/assets//img/detalles.jpg}">
+        </div>
+    </section>
+
+    <!-- new product 02 section -->
+    <section class="new product">
+        <div class="center-text">
+            <h2>los mejores productos</h2>
+        </div>
+        <div class="new-content">
+            <div class="row">
+                <img th:src="@{/assets//img/new-p1.png}">
+                <h4>ARREGLO AMANDA EN COPÓN</h4>
+                <h5>S/. 380.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p2.png}">
+                <h4>ARREGLO ARIANNA EN COPÓN</h4>
+                <h5>S/. 280.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p3.png}">
+                <h4>ARREGLO ALDA EN COPÓN</h4>
+                <h5>S/. 260.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+            <div class="row">
+                <img th:src="@{/assets//img/new-p4.png}">
+                <h4>ARREGLO HELENA EN MIRROR BOX</h4>
+                <h5>S/. 350.00</h5>
+                <div class="top">
+                    <p>nuevo</p>
+                </div>
+                <div class="bbtn">
+                    <a href="#">Añadir a la cesta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+        <div class="contact-box">
+            <h4>Mi cuenta</h4>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Verificar</a></li>
+            <li><a href="#">Contacta con nosotras</a></li>
+            <li><a href="#">Carro de la compra</a></li>
+            <li><a href="#">Lista de deseos</a></li>
+        </div>
+        <div class="contact-box">
+            <h4>Enlaces rápidos</h4>
+            <li><a href="#">Ubicación de la tienda</a></li>
+            <li><a href="#">Seguimiento de pedidos</a></li>
+            <li><a href="#">Guia de tallas</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+        </div>
+        <div class="contact-box">
+            <h4>Información</h4>
+            <li><a href="#">Página de privacidad</a></li>
+            <li><a href="#">Sobre nosotras</a></li>
+            <li><a href="#">Carreras</a></li>
+            <li><a href="#">Información de entrega</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+        </div>
+        <div class="contact-box">
+            <h4>Servicio al Cliente</h4>
+            <li><a href="#">Politica de envios</a></li>
+            <li><a href="#">Ayuda y Contáctenos</a></li>
+            <li><a href="#">Devoluciones y reembolsos</a></li>
+            <li><a href="#">Tiendas en línea</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+        </div>
+        <div class="contact-box">
+            <h4>Conecta con nosotras</h4>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- scroll -->
+    <a href="#" class="scroll-top"><i class='bx bx-chevrons-up' ></i></a>
+
+    <div class="end-text">
+        <p>© inicio de 2023. Reservados todos los derechos.</p>
+    </div>
+
+    <!-- custom js link] -->
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>

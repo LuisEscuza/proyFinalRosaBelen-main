@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:fragment="cabecera">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+  <title>RosaBelen admin</title>
+
+  <link rel="stylesheet" th:href="@{/css/dashboard.css}">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+  <div class="container-sidebar">
+    <input type="checkbox" id="nav-toggle">
+  
+    <div class="sidebar" th:fragment="barraDash">
+      <div class="sidebar-brand">
+        <h2>
+          <span class="lab la-accusoft"></span>
+          <span>RosaBelen</span>
+        </h2>
+      </div>
+  
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a th:href="@{/estadisticas/}" class="active"><span class="las la-igloo"></span>
+            <span onclick="ingresoEstadisticas();">Estadistica</span></a>
+          </li>
+          <li>
+            <a th:href="@{/clientes/}"><span class="las la-users"></span>
+            <span onclick="ingresoClientes();">Clientes</span></a>
+          </li>
+          <li>
+            <a th:href="@{/producto/}"><span class="las la-clipboard-list"></span>
+            <span onclick="ingresoProductos();">Productos</span></a>
+          </li>
+          <li>
+            <a th:href="@{/pedidos/}"><span class="las la-shopping-bag"></span>
+            <span onclick="ingresoPedidos();">Pedidos</span></a>
+          </li>
+          <li>
+            <a  th:href="@{/categoria/}"><span class="las la-receipt"></span>
+            <span >Categoria</span></a>
+          </li>
+          <li>
+            <a th:href="@{/cuenta/}"><span class="las la-user-circle"></span>
+            <span onclick="ingresoCuenta();" >Cuenta</span></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="main-content-background" id="close-sidebar"></div>
+      <header th:fragment="busqueda">
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+         
+        </h2>
+  
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Busca aqui" />
+        </div>
+  
+        <div class="user-wrapper">
+          <img th:src="@{/assets/img/superadmin.jpeg}" width="40px" height="40px" alt="">
+          <div>
+            <h4>Grupo 7</h4>
+            <small>Super admin</small>
+          </div>
+        </div>
+  
+      </header>
+  
+      <main>
+        <h4>dsfdsfdsfsd</h4>
+  
+      </main>
+    </div>
+  </div>
+
+</body>
+<script th:src="@{/js/dashboard.js}"></script>
+</html>
